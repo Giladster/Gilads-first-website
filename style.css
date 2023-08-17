@@ -1,0 +1,459 @@
+
+body{
+background-image: url(./moon\ background.jpg);
+background-size: cover;
+
+}
+    
+    
+     /*homepage*/
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        position: relative;
+        height: 100vh;
+    }
+    
+    
+    .cyberball-div{
+    position: relative;
+    }
+    
+    .cyberball-pic{
+        height: 450px;  
+        position: absolute;
+        opacity: 1;
+        left: -200px;
+        top:-200px;
+    }
+    
+    .earth-div{
+    position: relative;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row: 3/6;
+    overflow: hidden;
+    top: 100px;}
+  
+    
+    .earth-pic{
+    height: 450px; 
+    position:absolute;
+    opacity: 1;
+    right: -200px;
+    top: -50px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row: 3/6;
+   
+    }
+    
+    .profile-div{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    
+    
+    }
+    
+    .frame{
+        border-radius: 50%;
+        border: solid 5px white;  
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      
+    }
+
+
+    .profile-pic{
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        overflow: visible;
+        z-index: -1;
+    }
+    
+    h1{ 
+    font-size:40px;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: lighter;
+    color: gold;
+    text-shadow: 0 0 50px yellow;
+    animation: flicker 1s infinite alternate;
+    }
+    
+   @keyframes flicker {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0.5;
+        }
+    }
+    
+    h2{
+    font-size: 20px;
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    letter-spacing: 10px;
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 0 0 10px;
+    }
+
+    /*layout*/
+    .grid-layout-container{
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(8, 1fr);
+        height: 100vh;
+        gap: 10px;
+    }
+    
+    .item{
+     position: relative;
+     top: 100px;
+     font-size: 15px;
+     font-weight: bold;
+     border: solid 10px black;
+     background: linear-gradient(to left, orange, gold);
+     border-radius: 20px;
+     /*box-shadow: -10px 10px 20px blue;*/
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border: solid 5px black;
+     font-family: 'Anek Gujarati', sans-serif;
+     text-align:left
+     
+    }
+
+   
+
+    h5{
+        color: white;
+        text-shadow: 0 0 10px white;
+        align-self: center;
+        position: absolute;
+        top: -35px;
+        font-size: 30px;
+      }
+      
+      .layout-text{
+        position: relative;
+        top: -30px;
+
+    }
+
+        #education-heading{
+            position:relative;
+            top: -15px;
+            
+        }
+
+        #education-text{
+
+            position: relative;
+            top: -60px;
+            left: -10px;
+        }
+
+        #work-ex-text{
+            position: relative;
+            top: 10px;
+        }
+        
+        #skill-text{
+            position: relative;
+            top: 20px;
+
+        }
+
+        #goals-text{
+            top: 15px;
+
+        }
+    
+        .education{
+        grid-column: 3/4;
+        grid-row: 3/6;
+        
+     
+    }
+
+
+    .work-ex{
+     
+        grid-column: 4/6;
+        grid-row:3/5;
+        
+    }
+
+    .goals{
+       grid-column: 4/7;
+       grid-row: 5/6;
+      
+    }
+
+    
+    .skills{
+        grid-column: 6/7;
+        grid-row: 2/5;
+        
+    }
+
+
+    .meteor-1{
+        grid-column: 8/9;
+        grid-row: 2/3;
+       height:100px; 
+       
+       
+    }
+
+    .meteor-2{
+height:40px;
+grid-column: 6/7;
+grid-row: 1/2;
+
+    }
+
+.meteor-3{   
+    height: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+        height: 150px;
+       }
+
+
+.meteor-4{
+    height: 100px;
+    grid-column: 7/8;
+    grid-row: 4/5;          
+                
+       }
+
+ .meteor-5{
+     height: 200px;
+     grid-column: 3/4;
+     grid-row: 5/6;              
+     position:relative;
+    top: 80px;
+
+        }
+
+    .meteor-6{
+        grid-column: 1/2;
+        grid-row: 5/6; 
+        height: 60px;
+        position: relative;
+        bottom: -100px;
+    }
+
+
+ /*ABOUTME*/
+.about-grid-container{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(3,1fr);
+height:100vh;
+
+}
+
+.littleman-flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.littleman{
+    height:200px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    position: relative;
+    top: 150px;
+    
+
+}
+
+
+.about-div{
+font-size: 50px;
+position: relative;
+top: 200px;
+height: 80px;
+font-family: 'Arimo', sans-serif;
+color: gold;
+border: solid 7px white;
+border-radius: 20px;
+grid-column: 2/3;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-shadow: 0 0 10px;
+}
+
+.about-div>p{
+
+font-size: 10px;
+position:absolute;
+top: 57px;
+}
+
+
+/*contact me*/
+ 
+h4{
+position: relative;
+top: 120px;
+left: 100px;
+font-size:80px;
+color: white;
+text-shadow: 0 0 10px;
+font-weight: bold;
+font-family: 'Anek Gujarati', sans-serif;
+}
+
+.contact-text{
+  font-size: 20px;
+  font-family: 'Anek Gujarati', sans-serif;
+  color:gold;
+  position: relative;
+  left: 100px;
+  top: 50px;
+  text-shadow: 0 0 10px;
+  font-weight: bold;
+  line-height: 2;
+  margin: 0;
+  width: 70%;
+}
+
+
+
+
+.contact-div2{
+position: relative;
+overflow: hidden;
+height:100vh;
+box-sizing: border-box;
+bottom: 70px;
+}
+
+.contact-item{
+
+box-sizing: border-box;
+}
+
+.little-man{
+
+    position: absolute;
+    height: 150px;
+    left: 600px;
+    top: 130px;
+   
+    }
+
+
+
+
+/*media query*/
+    
+    @media(max-width:1042px){
+
+        h1{text-align: center;}
+
+        .grid-layout-container{ 
+            display:flex;
+            flex-direction: column;
+           
+        }
+    
+    .item{
+    min-height: 100px;
+       flex: 1;
+       font-size: 15px;
+       line-height: 10px;
+       
+    }  
+    
+    #education-heading{
+        position:relative;
+        top: 5px;
+        
+    }
+
+    #education-text{
+
+        position: relative;
+        top: -40px;
+        left: -10px;
+        
+    }
+
+    #work-ex-text{
+        position: relative;
+        top: 10px;
+    }
+    
+    #skill-text{
+        position: relative;
+        top: 20px;
+
+    }
+
+    #goals-text{
+        top: 15px;
+
+    }
+
+
+    .meteordiv{
+        display:none;
+    
+    }
+    
+    .about-div{
+
+        font-size: 30px;
+        }
+
+        h4{
+            font-size: 60px;
+    
+        }
+    
+    }
+
+    .contact-div2{
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+   
+
+    
